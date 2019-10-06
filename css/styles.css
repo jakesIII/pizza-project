@@ -1,0 +1,24 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.navlink>a{
+ color: black;
+ padding: 10px 20px 10px 20px;
+}
+
+.navlink>a:hover{
+    background-color: rgba(63, 50, 50, 0.425);
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: aliceblue;
+}
+
+nav>a>h3{
+    color: rgb(94, 57, 9); 
+    font-family: 'Lobster', cursive;
+}
+
+nav>a:hover{
+    text-decoration: none;
+}
