@@ -22,3 +22,23 @@ nav>a>h3{
 nav>a:hover{
     text-decoration: none;
 }
+
+header{
+    background-image: url(https://i.pinimg.com/originals/d3/6d/46/d36d462db827833805497d9ea78a1343.jpg);
+    height: 680px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-shadow: 2px 2px 5px rgba(122, 116, 116, 0.658);
+}
+
+header>h1{
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+    padding-top: 300px;
+}
+
+header>p{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
