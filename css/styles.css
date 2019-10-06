@@ -42,3 +42,43 @@ header>p{
     font-family: 'Lobster', cursive;
     font-size: 25px;
 }
+
+.toggle-btn>a{
+    color: black;
+    /* border: 2px solid black; */
+    padding: 20px 5px 20px 5px;
+    margin: 10px;
+}
+
+.toggle-btn>a:hover{
+    text-decoration: none;
+    color: azure;
+    box-shadow: 2px 2px 5px azure;
+}
+
+.toggle-btn{
+    background-color: rgb(211, 205, 205);
+    font-size: 18px;
+    font-weight: 700;
+    height: 75px;
+    margin: 2px 0px 2px 0px;
+}
+
+.pizza-select{
+    width: 350px;
+    margin: 40px;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#yourorder{
+    box-shadow: 3px 3px 5px black;
+    padding: 20px;
+    height: auto;
+    overflow-y: auto;
+}
