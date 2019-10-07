@@ -85,6 +85,3 @@ $(document).ready(function(){
     event.preventDefault();
 });
 
-// $.each($("tr[id='total']"), function(){
-//     $('span').text(costs);
-// });
