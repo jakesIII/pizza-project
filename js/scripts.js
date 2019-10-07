@@ -9,7 +9,7 @@ $(document).ready(function(){
 
         var cartCost = pizza + crust + topping;
 
-        $('table#list').append('<tr>'+'<td>'+ $("#somesingmeaty").text()+'</td>'+'<td>'+cartCost+'</td>'+'</tr>');
+        $('table#list').append('<tr>'+'<td>'+ $("#somesingmeaty").text()+'</td>'+'<td id="total">'+cartCost+'</td>'+'</tr>');
         
     });
 
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
         var cartCost = pizza + crust + topping;
 
-        $('table#list').append('<tr>'+'<td>'+ $("#hawaiian").text()+'</td>'+'<td>'+cartCost+'</td>'+'</tr>');
+        $('table#list').append('<tr>'+'<td>'+ $("#hawaiian").text()+'</td>'+'<td id="total">'+cartCost+'</td>'+'</tr>');
         
     });
 
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
         var cartCost = pizza + crust + topping;
 
-        $('table#list').append('<tr>'+'<td>'+ $("#veggie").text()+'</td>'+'<td>'+cartCost+'</td>'+'</tr>');
+        $('table#list').append('<tr>'+'<td>'+ $("#veggie").text()+'</td>'+'<td id="total">'+cartCost+'</td>'+'</tr>');
         
     });
 
@@ -45,13 +45,13 @@ $(document).ready(function(){
 
         var cartCost = pizza + crust + topping;
 
-        $('table#list').append('<tr>'+'<td>'+ $("#periperi").text()+'</td>'+'<td>'+cartCost+'</td>'+'</tr>');
+        $('table#list').append('<tr>'+'<td>'+ $("#periperi").text()+'</td>'+'<td id="total">'+cartCost+'</td>'+'</tr>');
         
     });
     
     var total = [];
 
-    
+
 
     event.preventDefault();
 });

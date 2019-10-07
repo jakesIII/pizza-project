@@ -9,6 +9,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Lobster&display=swap" rel="stylesheet">
     <title>P_nyatta</title>
 </head>
 <body>
@@ -27,9 +28,9 @@
         <p>...Pizza made just like mama would! <br> And delivered to your door step. </p>
     </header>
 
-    <div id="menu"></div>
+    <div id="pizza"></div>
     <div class="navbar justify-content-center toggle-btn">
-        <a href="#pizza">Pizza</a>        
+        <a href="#">Pizza</a>        
     </div>
 
     <div class="container-fluid">
@@ -45,169 +46,175 @@
                 <div class="pizza-section">
                     <div class="one">
                         <div class="card card-body pizza-select">
-                            <img src="https://meetyouatarnis.com/wp-content/uploads/2018/07/Deluxe-Pizza.jpg" alt="somesing meaty" height="300" width="300"><br>                
-                            <p><b>Something Meaty</b></br> Loaded with four delicious varieties of meat… crispy <br> bacon, thin sliced ham, spicy pepperoni and hot sausage.</p>                    
-                            <div id="pizzaopt">
-                                <select class="mb-3 form-control" name="size">            
-                                    <option class="disabled">Choose your pizza</option>
+                            <img class="img-thumbnail" src="https://meetyouatarnis.com/wp-content/uploads/2018/07/Deluxe-Pizza.jpg" alt="somesing meaty" height="300" width="300"><br>                
+                            <p><b id="somesingmeaty">Somesing Meaty</b></br> Loaded with four delicious varieties of meat… crispy <br> bacon, thin sliced ham, spicy pepperoni and hot sausage.</p>                    
+                            <form required id="pizzamopt">
+                                <select class="mb-3 form-control">            
+                                    <option disabled selected value="0">Choose your pizza</option>
                                     <option id="size" value="900">Large</option>
                                     <option id="size" value="500">Standard</option>
                                     <option id="size" value="400">Small</option>
                                 </select>
-                            </div>
+                            </form>                        
 
-                            <div id="crustopt">
-                                <select class="mb-3 form-control" name="crust">            
-                                    <option class="disabled">Crust??</option>
-                                    <option id="crust" value="200">Thick</option>
-                                    <option id="crust" value="200">Thin</option>
+                            <form required id="crustmopt">
+                                <select class="mb-3 form-control">            
+                                    <option disabled selected value="0">Crust??</option>
+                                    <option id="crust" value="250">Thick</option>
+                                    <option id="crust" value="150">Thin</option>
                                     <option id="crust" value="200">Gluten-free</option>
                                 </select>
-                            </div>
+                            </form>
 
-                            <div id="toppingopt">
-                                <select class="mb-3 form-control" name="toppings">            
-                                    <option class="disabled">Extra Toppings??</option>
+                            <form required id="toppingmopt">
+                                <select class="mb-3 form-control">            
+                                    <option disabled selected value="0">Extra Toppings??</option>
                                     <option id="topps" value="200">Bacon</option>
                                     <option id="topps" value="200">Onion</option>
                                     <option id="topps" value="200">Black Olives</option>
                                 </select>
-                            </div>
-                            <button id="" class="btn btn-primary order" value="">Add to Cart</button>                                        
+                            </form>
+                            <button id="meatycart" type="submit" class="btn btn-primary order" value="">Add to Cart</button>                                        
                         </div>
                     
                         <div class="card card-body pizza-select">
-                            <img src="https://www.simplyrecipes.com/wp-content/uploads/2019/01/Hawaiian-Pizza-Cauliflower-LEAD-2.jpg" alt="Hawaiian" height="300" width="300"><br>                
-                            <p><b>Hawaiian Pizza</b></br>topped with tomato sauce, <br> cheese, pineapple, and ham.</p>
-                            <div id="pizzaopt">
+                            <img class="img-thumbnail" src="https://www.simplyrecipes.com/wp-content/uploads/2019/01/Hawaiian-Pizza-Cauliflower-LEAD-2.jpg" alt="Hawaiian" height="300" width="300"><br>                
+                            <p><b id="hawaiian">Hawaiian Pizza</b></br>topped with tomato sauce, <br> cheese, pineapple, and ham.</p>
+                            <div id="pizzahopt">
                                 <select class="mb-3 form-control" name="size">            
-                                    <option class="disabled">Choose your pizza</option>
+                                    <option disabled selected value="0">Choose your pizza</option>
                                     <option id="size" value="900">Large</option>
                                     <option id="size" value="500">Standard</option>
                                     <option id="size" value="400">Small</option>
                                 </select>
                             </div>
 
-                            <div id="crustopt">
+                            <div id="crusthopt">
                                 <select class="mb-3 form-control" name="crust">            
-                                    <option class="disabled">Crust??</option>
-                                    <option id="crust" value="200">Thick</option>
-                                    <option id="crust" value="200">Thin</option>
+                                    <option disabled selected value="0">Crust??</option>
+                                    <option id="crust" value="250">Thick</option>
+                                    <option id="crust" value="150">Thin</option>
                                     <option id="crust" value="200">Gluten-free</option>
                                 </select>
                             </div>
 
-                            <div id="toppingopt">
+                            <div id="toppinghopt">
                                 <select class="mb-3 form-control" name="toppings">            
-                                    <option class="disabled">Extra Toppings??</option>
+                                    <option disabled selected value="0">Extra Toppings??</option>
                                     <option id="topps" value="200">Bacon</option>
                                     <option id="topps" value="200">Onion</option>
-                                    <option id="topps" value="200">Black Olives</option>
+                                    <option id="topps" value="200">Pineapple</option>
                                 </select>
                             </div>
-                            <button class="btn btn-primary order" value="">Add to Cart</button>                
+                            <button id="hawaiiancart" class="btn btn-primary order" value="">Add to Cart</button>                
                         </div>
                     </div>
 
                     <div class="one">
                         <div class="card card-body pizza-select">
                             <img class="img-thumbnail" src="https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Grilled-Veggie-Pizza_EXPS_LSBZ18_48960_D01_18_6b.jpg" alt="Veggie Pizza" height="300" width="300"><br>                    
-                            <p><b>Original Veggie</b></br> Toppings are Broccoli florets, Tomato, Red <br> or green pepper, Shredded Black Olives, <br> Cucumber And, of course, the classic <br> cream cheese/sour cream/dill “sauce”.</p>                    
-                            <div id="pizzaopt">
+                            <p><b id="veggie">Original Veggie</b></br> Toppings are Broccoli florets, Tomato, Red <br> or green pepper, Shredded Black Olives, <br> Cucumber And, of course, the classic <br> cream cheese/sour cream/dill “sauce”.</p>                    
+                            <div id="pizzavopt">
                                 <select class="mb-3 form-control" name="size">            
-                                    <option class="disabled">Choose your pizza</option>
+                                    <option disabled selected value="0">Choose your pizza</option>
                                     <option id="size" value="900">Large</option>
                                     <option id="size" value="500">Standard</option>
                                     <option id="size" value="400">Small</option>
                                 </select>
                             </div>
 
-                            <div id="crustopt">
+                            <div id="crustvopt">
                                 <select class="mb-3 form-control" name="crust">            
-                                    <option class="disabled">Crust??</option>
-                                    <option id="crust" value="200">Thick</option>
-                                    <option id="crust" value="200">Thin</option>
-                                    <option id="crust" value="200">Gluten-free</option>
+                                    <option disabled selected value="0">Crust??</option>
+                                    <option id="crust" value="250">Thick</option>
+                                    <option id="crust" value="100">Thin</option>
+                                    <option id="crust" value="150">Gluten-free</option>
                                 </select>
                             </div>
 
-                            <div id="toppingopt">
+                            <div id="toppingvopt">
                                 <select class="mb-3 form-control" name="toppings">            
-                                    <option class="disabled">Extra Toppings??</option>
+                                    <option disabled selected value="0">Extra Toppings??</option>
                                     <option id="topps" value="200">Bacon</option>
                                     <option id="topps" value="200">Onion</option>
                                     <option id="topps" value="200">Black Olives</option>
                                 </select>
                             </div>
-                            <button class="btn btn-primary order" value="">Add to Cart</button>                                        
+                            <button id="veggiecart" class="btn btn-primary order" value="">Add to Cart</button>                                        
                         </div>
                     
 
                     
                         <div class="card card-body pizza-select">
-                            <img src="https://img.taste.com.au/C--WdSJm/taste/2016/11/peri-peri-barbecue-chicken-pizza-90806-1.jpeg" alt="Chicken Peri Peri" height="300" width="300"><br>                    
-                            <p><b>Peri Peri Chicken</b></br>sliced chicken breast, mozzarella cheese, <br> and a few other complementary toppings, <br> liberally laced with peri peri sauce.</p>                    
-                            <div id="pizzaopt">
+                            <img class="img-thumbnail" src="https://img.taste.com.au/C--WdSJm/taste/2016/11/peri-peri-barbecue-chicken-pizza-90806-1.jpeg" alt="Chicken Peri Peri" height="300" width="300"><br>                    
+                            <p><b id="periperi">Peri Peri Chicken</b></br>sliced chicken breast, mozzarella cheese, <br> and a few other complementary toppings, <br> liberally laced with peri peri sauce.</p>                    
+                            <div id="pizzapopt">
                                 <select class="mb-3 form-control" name="size">            
-                                    <option class="disabled">Choose your pizza</option>
+                                    <option disabled selected value="0">Choose your pizza</option>
                                     <option id="size" value="900">Large</option>
                                     <option id="size" value="500">Standard</option>
                                     <option id="size" value="400">Small</option>
                                 </select>
                             </div>
 
-                            <div id="crustopt">
+                            <div id="crustpopt">
                                 <select class="mb-3 form-control" name="crust">            
-                                    <option class="disabled">Crust??</option>
+                                    <option disabled selected value="0">Crust??</option>
                                     <option id="crust" value="200">Thick</option>
                                     <option id="crust" value="200">Thin</option>
                                     <option id="crust" value="200">Gluten-free</option>
                                 </select>
                             </div>
 
-                            <div id="toppingopt">
+                            <div id="toppingpopt">
                                 <select class="mb-3 form-control" name="toppings">            
-                                    <option class="disabled">Extra Toppings??</option>
+                                    <option disabled selected value="0">Extra Toppings??</option>
                                     <option id="topps" value="200">Bacon</option>
                                     <option id="topps" value="200">Onion</option>
                                     <option id="topps" value="200">Black Olives</option>
                                 </select>
                             </div>
-                            <button class="btn btn-primary order" value="">Add to Cart</button>                                        
+                            <button id="peripericart" class="btn btn-primary order" value="">Add to Cart</button>                                        
                         </div>
                     </div>
             
                 </div>
             </div>
-
-            <div id="cart"></div>
+            
             <div class="mt-4 col-md-4">
                 <div class="card-body" id="yourorder">
-                    <h3>Your Order.</h3>
+                    <h3 id="cart">Your Order.</h3>
                     <div id="table">
-                        <table> 
+                        <table id="list"> 
                             <tr>
                                 <th>Order</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
+                                <th>Price</th>                                
                             </tr>
+                        </table>
+                        <table id="grandtotal">
+                            
                         </table>                    
                     </div>
+                    <di</div>
                     <h3><b>Delivery</b></h3>
                     <div>
                         <input class="required form-control mb-4" id="location" type="text" value="" placeholder="Location">
                     </div>
 
                     <button class="btn btn-success">Make your Order</button>
-            
+                    
+                    <div id="done">
+
+                    </div>
                 </div>
             </div>
         </div>
-        
+        <hr>
         <footer>
             <div class="row text-center">
                 <div class="location col-md-4">
-                    <h3>Locate Us:</h3>
+                    <h3><b>Locate Us:</b></h3>
+                    <hr>
                     <div>
                         <h4><b>Nairobi</b></h4>
                         <p>Fortis Towers</p>
@@ -216,14 +223,19 @@
                 </div>
 
                 <div class="contact col-md-4">
-                    <h4>Custom Service</h4>
+                    <h3><b>Custom Service:</b></h3>
+                    <hr>
                     <a href="gmail.com"><i class="fa fa-envelope" style="font-size:18px; color: black; margin: 4px;"></i>customerservice@p-nyatta.com</a>
                 </div>
 
                 <div class="socials col-md-4">
-                    <a href="facebook.com"><i class="fa fa-facebook" style="font-size:32px; color: black; margin: 10px;"></i></a>
-                    <a href="twitter.com"><i class="fa fa-twitter" style="font-size:32px; color: black; margin: 10px;"></i></a>
-                    <a href="instagram.com"><i class="fa fa-instagram" style="font-size:32px; color: black; margin: 10px;"></i></a>   
+                    <h3><b>Socials:</b></h3>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <a href="facebook.com"><i class="fa fa-facebook" style="font-size:32px; color: black; margin: 10px;"></i></a>
+                        <a href="twitter.com"><i class="fa fa-twitter" style="font-size:32px; color: black; margin: 10px;"></i></a>
+                        <a href="instagram.com"><i class="fa fa-instagram" style="font-size:32px; color: black; margin: 10px;"></i></a>   
+                    </div>
                 </div>
             </div>
         </footer>
