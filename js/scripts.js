@@ -48,11 +48,43 @@ $(document).ready(function(){
         $('table#list').append('<tr>'+'<td>'+ $("#periperi").text()+'</td>'+'<td id="total">'+cartCost+'</td>'+'</tr>');
         
     });
+
+    // var costs = 0;
+    // var totalCosts = [];
     
-    var total = [];
+    // // $.each(totalCosts.push($(cartCost)));
+    // // $.each($('tr#total'), function(){
+    // //     totalcosts.push($(this).val());
+    // // });
+    
+    // for(var p = 0; p < totalCosts.length; p++){
+    //     costs += totalCosts[p];
+    // };
+    
+    // $('button.order').click(function(){
+    //     $('span#texttotal').text(costs);        
+    // })
+    
+    $('button#deliv').click(function(){
+        $('#maarea').toggle();
+    })
+    
 
+    $('button#done').click(function(){
 
+        var deliverSpot = $('input#location').val()
+        
+        if ($('input#location').val() !== ""){
+            alert("Your pizza will be delivered to " + deliverSpot);
+        } else {
+            alert("Pick up at your nearest location! Bon apetite");
+        };
+    });
+       
 
     event.preventDefault();
 });
 
+// $.each($("tr[id='total']"), function(){
+//     $('span').text(costs);
+// });
